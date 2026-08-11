@@ -1,3 +1,5 @@
+import { PRODUCT_IMAGE_FALLBACK } from "@/lib/productImages";
+
 interface ProductCardProps {
   image: string;
   title: string;
@@ -23,7 +25,7 @@ export default function ProductCard({
   return (
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col overflow-hidden group">
       {/* Image */}
-      <div className="relative overflow-hidden bg-gray-50">
+      <div className="relative overflow-hidden bg-white">
         {badge && (
           <span
             className="absolute top-2 left-2 z-10 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow"
@@ -40,10 +42,12 @@ export default function ProductCard({
         <img
           src={image}
           alt={title}
-          className="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          className="w-full h-40 md:h-48 object-contain p-3 group-hover:scale-105 transition-transform duration-300"
           onError={(e) => {
-            (e.target as HTMLImageElement).src =
-              "https://placehold.co/300x300/F0F7F2/1A6D3A?text=VedaPure";
+            const t = e.target as HTMLImageElement;
+            if (t.src.endsWith(PRODUCT_IMAGE_FALLBACK)) return;
+            t.src = PRODUCT_IMAGE_FALLBACK;
           }}
         />
       </div>

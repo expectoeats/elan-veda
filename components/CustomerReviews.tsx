@@ -1,4 +1,5 @@
 import { Star, Quote, CheckCircle } from "lucide-react";
+import { productImages, pickProductImage } from "@/lib/productImages";
 
 const reviews = [
   {
@@ -7,8 +8,8 @@ const reviews = [
     product: "Aloe Vera Gel",
     rating: 5,
     text: "Mujhe Aarogya India ka Aloe Vera Gel bahut pasand aaya. 2 mahine use karne ke baad meri skin glow karne lagi aur dryness bilkul khatam ho gayi. 100% natural feel aata hai — sach mein results visible hain!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
-    productImg: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    avatar: "https://i.pravatar.cc/150?img=45",
+    productImg: productImages.aloeVeraGel,
     verified: true,
   },
   {
@@ -17,8 +18,8 @@ const reviews = [
     product: "Shilajit 24K Gold",
     rating: 5,
     text: "Himalaya ka original shilajit — stamina aur energy level mein bahut farak dikha. Pehle bahut tired rehte the, ab subah fresh hote hain aur poore din active rehte hain. Best purchase of 2024!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg",
-    productImg: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    productImg: productImages.shilajitGold,
     verified: true,
   },
   {
@@ -27,8 +28,8 @@ const reviews = [
     product: "Jamun Karela Juice",
     rating: 5,
     text: "Mere husband ke sugar level ko natural tarike se control karne ke liye ye juice bahut kaam aaya. 1 mahine mein hi fasting sugar normal range mein aa gaya. Taste bhi surprisingly accha hai!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%204%20(1).jpg",
-    productImg: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%204%20(1).jpg",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    productImg: pickProductImage("Jamun Karela Juice"),
     verified: true,
   },
   {
@@ -37,8 +38,8 @@ const reviews = [
     product: "Charcoal Face Wash",
     rating: 4,
     text: "Pimples aur blackheads ke liye ekdum perfect product. Ek week ke regular use se meri skin clear aur oil-free lagne lagi. Packaging bhi premium quality ki hai — paisa vasool!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg",
-    productImg: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg",
+    avatar: "https://i.pravatar.cc/150?img=59",
+    productImg: pickProductImage("Charcoal Face Wash"),
     verified: true,
   },
 ];
@@ -82,7 +83,7 @@ export default function CustomerReviews() {
                 <img
                   src={r.avatar}
                   alt={r.name}
-                  className="w-full h-full object-cover scale-125"
+                  className="w-full h-full object-cover"
                   onError={(e) => {
                     const t = e.target as HTMLImageElement;
                     t.style.display = "none";

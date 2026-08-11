@@ -1,8 +1,9 @@
 import ProductCard from "./ProductCard";
+import { productImages, pickProductImage } from "@/lib/productImages";
 
 const products = [
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    image: productImages.aloeVeraFaceWash,
     title: "Aloe Vera Foaming Face Wash",
     price: 249,
     oldPrice: 399,
@@ -11,7 +12,7 @@ const products = [
     badgeColor: "#1A6D3A",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    image: productImages.aloeVeraGel,
     title: "Aloe Vera Gel — 99% Pure",
     price: 199,
     oldPrice: 349,
@@ -19,7 +20,7 @@ const products = [
     badge: "Bestseller",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+    image: productImages.aloeVeraFaceWash,
     title: "Neem Tulsi Face Wash",
     price: 279,
     oldPrice: 449,
@@ -28,7 +29,7 @@ const products = [
     badgeColor: "#8B6914",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+    image: pickProductImage("Haldi Chandan Face Pack"),
     title: "Haldi Chandan Face Pack",
     price: 329,
     oldPrice: 499,
@@ -98,9 +99,9 @@ export default function PremiumSkincare() {
 
             <div className="absolute inset-0 grid grid-cols-3 gap-2 md:gap-3 p-2 md:p-4 items-end">
               {[
-                "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
-                "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg",
-                "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+                productImages.aloeVeraFaceWash,
+                productImages.aloeVeraGel,
+                productImages.multivitamin,
               ].map((src, i) => (
                 <div
                   key={i}

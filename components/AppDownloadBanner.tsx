@@ -1,4 +1,5 @@
 import { Download, Gift, Sparkles } from "lucide-react";
+import { productImages } from "@/lib/productImages";
 
 export default function AppDownloadBanner() {
   return (
@@ -31,24 +32,24 @@ export default function AppDownloadBanner() {
                 </div>
                 <div className="flex-1 p-2 grid grid-cols-2 gap-2 overflow-hidden">
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg"
+                    src={productImages.shilajitGold}
                     alt=""
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-full object-contain rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Amla%20juice%2001.jpg"
+                    src={productImages.appleCiderVinegar}
                     alt=""
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-full object-contain rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg"
+                    src={productImages.aloeVeraGel}
                     alt=""
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-full object-contain rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg"
+                    src={productImages.aloeVeraFaceWash}
                     alt=""
-                    className="w-full h-full object-cover rounded"
+                    className="w-full h-full object-contain rounded"
                   />
                 </div>
                 <div className="bg-[#1A6D3A]/10 p-1.5 flex justify-around border-t">
@@ -66,9 +67,9 @@ export default function AppDownloadBanner() {
               style={{ background: "#FFF8E1" }}
             >
               <img
-                src="https://lm25aarogyaindia.com/assets/websiteimages/Dr.%20Aarogya%20Rollon%20Oil%20Pure%2001.jpg"
+                src={productImages.multivitamin}
                 alt="Doctor recommended"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain p-2"
                 onError={(e) => {
                   const t = e.target as HTMLImageElement;
                   t.style.display = "none";

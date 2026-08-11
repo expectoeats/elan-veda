@@ -1,8 +1,9 @@
 import ProductCard from "./ProductCard";
+import { pickProductImage } from "@/lib/productImages";
 
 const products = [
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg",
+    image: pickProductImage("Charcoal Face Wash"),
     title: "Charcoal Face Wash",
     price: 299,
     oldPrice: 499,
@@ -10,7 +11,7 @@ const products = [
     badge: "Best Seller",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg",
+    image: pickProductImage("Charcoal Face Scrub"),
     title: "Charcoal Face Scrub",
     price: 349,
     oldPrice: 549,
@@ -19,14 +20,14 @@ const products = [
     badgeColor: "#1A6D3A",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+    image: pickProductImage("Rose Water Face Mist"),
     title: "Rose Water Face Mist",
     price: 199,
     oldPrice: 349,
     rating: 4.7,
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Bhumi%20Flax%20Seed%201.jpg",
+    image: pickProductImage("Onion Shampoo"),
     title: "Onion Shampoo",
     price: 399,
     oldPrice: 599,

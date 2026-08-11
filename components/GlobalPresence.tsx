@@ -134,17 +134,15 @@ export default function GlobalPresence() {
                   <Star className="w-5 h-5 fill-[#DAA520] text-[#DAA520]" />
                 </div>
 
-                <img
-                  src="https://lm25aarogyaindia.com/static/media/Globe.webp"
-                  alt="Global Presence"
-                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-2xl"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src =
-                      "https://lm25aarogyaindia.com/assets/websiteimages/Amla-banner-design.jpg";
-                    (e.target as HTMLImageElement).className =
-                      "relative z-10 w-full h-full object-cover rounded-full border-4 border-[#DAA520] shadow-2xl";
+                <div
+                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 rounded-full flex items-center justify-center border-4 border-[#DAA520] shadow-2xl"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 30% 25%, #4CAF50 0%, #1A6D3A 55%, #0E4423 100%)",
                   }}
-                />
+                >
+                  <Globe className="w-24 h-24 md:w-32 md:h-32 text-white/90" strokeWidth={1} />
+                </div>
 
                 <div
                   className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 md:w-40 h-6 md:h-8 rounded-[50%] shadow-inner z-0"
@@ -191,52 +189,23 @@ export default function GlobalPresence() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 mt-5">
             {[
-              {
-                label: "FSSAI",
-                color: "#1A6D3A",
-                img: "https://lm25aarogyaindia.com/static/media/5.png",
-              },
-              {
-                label: "AYUSH",
-                color: "#C0392B",
-                img: "https://lm25aarogyaindia.com/static/media/2.png",
-              },
-              {
-                label: "GMP",
-                color: "#8B6914",
-                img: "https://lm25aarogyaindia.com/static/media/5.png",
-              },
-              {
-                label: "ISO 9001",
-                color: "#1A4D8F",
-                img: "https://lm25aarogyaindia.com/static/media/5.png",
-              },
-              {
-                label: "100% Natural",
-                color: "#2E7D32",
-                img: "https://lm25aarogyaindia.com/static/media/2.png",
-              },
-            ].map((c) => (
+              { label: "FSSAI", color: "#1A6D3A", icon: Shield },
+              { label: "AYUSH", color: "#C0392B", icon: Leaf },
+              { label: "GMP", color: "#8B6914", icon: Award },
+              { label: "ISO 9001", color: "#1A4D8F", icon: Star },
+              { label: "100% Natural", color: "#2E7D32", icon: Heart },
+            ].map((c) => {
+              const CertIcon = c.icon;
+              return (
               <div key={c.label} className="text-center group">
                 <div
                   className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 flex items-center justify-center mx-auto mb-2 bg-white shadow-card group-hover:scale-110 transition-all"
                   style={{ borderColor: c.color }}
                 >
-                  <img
-                    src={c.img}
-                    alt={c.label}
-                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                    onError={(e) => {
-                      const t = e.target as HTMLImageElement;
-                      t.style.display = "none";
-                      const parent = t.parentElement!;
-                      const span = document.createElement("span");
-                      span.style.fontWeight = "800";
-                      span.style.fontSize = "10px";
-                      span.style.color = c.color;
-                      span.textContent = c.label;
-                      parent.appendChild(span);
-                    }}
+                  <CertIcon
+                    className="w-8 h-8 md:w-10 md:h-10"
+                    style={{ color: c.color }}
+                    strokeWidth={1.5}
                   />
                 </div>
                 <p
@@ -246,7 +215,8 @@ export default function GlobalPresence() {
                   {c.label}
                 </p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
