@@ -1,22 +1,23 @@
 import { Play } from "lucide-react";
+import { productImages, pickProductImage } from "@/lib/productImages";
 
 const videos = [
   {
     title: "Pure Shilajit — Doctor's Review",
     subtitle: "Dr. Priya Sharma | Ayurveda Expert",
-    thumbnail: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg",
+    thumbnail: productImages.shilajitGold,
     overlay: "linear-gradient(135deg, #008566 0%, #1A6D3A 100%)",
   },
   {
     title: "Amla Juice Benefits — Hindi",
     subtitle: "Customer Results — 3 Months",
-    thumbnail: "https://lm25aarogyaindia.com/assets/websiteimages/Amla%20juice%2001.jpg",
+    thumbnail: pickProductImage("Amla Juice Benefits"),
     overlay: "linear-gradient(135deg, #8B4513 0%, #C0392B 100%)",
   },
   {
     title: "Piles Care — Hemorrhoids Kit",
     subtitle: "Patient Testimonial — 100% Relief",
-    thumbnail: "https://lm25aarogyaindia.com/assets/websiteimages/AROGYAMULATI%20M%2001.png",
+    thumbnail: pickProductImage("Piles Care Kit"),
     overlay: "linear-gradient(135deg, #5C2A10 0%, #A0322C 100%)",
   },
 ];
@@ -46,7 +47,7 @@ export default function VideoTestimonials() {
             <img
               src={v.thumbnail}
               alt={v.title}
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              className="absolute inset-0 w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700"
             />
             <div
               className="absolute inset-0"
