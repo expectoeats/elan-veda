@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const products = [
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg",
+    image: "https://www.thehimalayanorganics.in/cdn/shop/files/HOShilajitGold60CapsFront.jpg?v=1733999171&width=1800",
     title: "Shilajit 24K Gold — Pure Himalayan",
     price: 1499,
     oldPrice: 2499,
@@ -11,7 +11,7 @@ const products = [
     badgeColor: "#8B6914",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/pras%2001.jpg",
+    image: "https://m.media-amazon.com/images/I/61W-BLo7QaL._AC_SX416_CB1169409_QL70_.jpg",
     title: "Apple Cider Vinegar — Mother",
     price: 449,
     oldPrice: 699,
@@ -19,7 +19,7 @@ const products = [
     badge: "Fat Loss",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Aarocal%20CZ%2001.jpg",
+    image: "https://m.media-amazon.com/images/I/51feeVElqkL._SX679_.jpg",
     title: "Aarogyamulati — Multivitamin",
     price: 599,
     oldPrice: 999,
@@ -28,7 +28,7 @@ const products = [
     badgeColor: "#1A6D3A",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/AROGYAMULATI%20M%2001.png",
+    image: "https://m.media-amazon.com/images/I/61z6N5wvWzL._AC_UL480_FMwebp_QL65_.jpg",
     title: "Shilajit 24K Gold Capsules",
     price: 1299,
     oldPrice: 1999,
@@ -47,19 +47,19 @@ export default function AyurvedicMedicines() {
           <div className="md:col-span-1 flex items-center justify-center">
             <div className="relative">
               <img
-                src="https://lm25aarogyaindia.com/assets/websiteimages/bdh%20cough%20syrup%2001%20(1).jpg"
+                src="https://www.thehimalayanorganics.in/cdn/shop/files/HOShilajitGold60CapsFront.jpg?v=1733999171&width=1800"
                 alt="Chakra"
                 className="w-28 h-28 md:w-36 md:h-36 object-contain drop-shadow-2xl"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    "https://lm25aarogyaindia.com/assets/websiteimages/Amla%20juice%2001.jpg";
+                    "https://m.media-amazon.com/images/I/61z6N5wvWzL._AC_UL480_FMwebp_QL65_.jpg";
                 }}
               />
             </div>
           </div>
           <div className="md:col-span-1 flex items-center justify-center">
             <img
-              src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg"
+              src="https://m.media-amazon.com/images/I/51feeVElqkL._SX679_.jpg"
               alt="Ayurvedic preparation"
               className="w-full h-40 md:h-48 object-cover rounded-lg shadow-inner"
               onError={(e) => {
@@ -67,7 +67,7 @@ export default function AyurvedicMedicines() {
                 t.style.height = "auto";
                 t.style.maxHeight = "200px";
                 t.src =
-                  "https://lm25aarogyaindia.com/assets/websiteimages/Bhumi%20Flax%20Seed%201.jpg";
+                  "https://m.media-amazon.com/images/I/61W-BLo7QaL._AC_SX416_CB1169409_QL70_.jpg";
               }}
             />
           </div>

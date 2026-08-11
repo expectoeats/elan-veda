@@ -40,7 +40,7 @@ export default function ProductCard({
         <img
           src={image}
           alt={title}
-          className="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-40 md:h-48 object-contain group-hover:scale-105 transition-transform duration-300 p-2"
           onError={(e) => {
             (e.target as HTMLImageElement).src =
               "https://placehold.co/300x300/F0F7F2/1A6D3A?text=VedaPure";

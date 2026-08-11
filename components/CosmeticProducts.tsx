@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const products = [
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    image: "https://m.media-amazon.com/images/I/51oa07Hik5L._AC_UL480_FMwebp_QL65_.jpg",
     title: "Aloe Vera Foaming Face Wash with Built-in Brush",
     price: 349,
     oldPrice: 549,
@@ -10,7 +10,7 @@ const products = [
     badge: "Bestseller",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    image: "https://m.media-amazon.com/images/I/71AVEbU0odL._AC_UL480_FMwebp_QL65_.jpg",
     title: "Pure Aloe Vera Gel — Multipurpose Beauty",
     price: 229,
     oldPrice: 399,
@@ -19,7 +19,7 @@ const products = [
     badgeColor: "#1A6D3A",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+    image: "https://m.media-amazon.com/images/I/51oa07Hik5L._AC_UL480_FMwebp_QL65_.jpg",
     title: "Neem Tulsi Pimple Clearing Face Wash",
     price: 299,
     oldPrice: 449,
@@ -28,7 +28,7 @@ const products = [
     badgeColor: "#C0392B",
   },
   {
-    image: "https://lm25aarogyaindia.com/assets/websiteimages/WhatsApp%20Image%202024-09-14%20at%2011.28.31%20AM.jpeg",
+    image: "https://m.media-amazon.com/images/I/61z6N5wvWzL._AC_UL480_FMwebp_QL65_.jpg",
     title: "Haldi Chandan Brightening Face Cream SPF 15",
     price: 379,
     oldPrice: 599,
