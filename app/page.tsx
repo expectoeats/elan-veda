@@ -1,32 +1,22 @@
-"use client";
-
-import Navbar from "@/components/Navbar";
-import HeroBanner from "@/components/HeroBanner";
-import CategoryCards from "@/components/CategoryCards";
-import PopularProducts from "@/components/PopularProducts";
-import AyurvedicMedicines from "@/components/AyurvedicMedicines";
-import PremiumSkincare from "@/components/PremiumSkincare";
-import CosmeticProducts from "@/components/CosmeticProducts";
-import GlobalPresence from "@/components/GlobalPresence";
-import VideoTestimonials from "@/components/VideoTestimonials";
-import CustomerReviews from "@/components/CustomerReviews";
-import AppDownloadBanner from "@/components/AppDownloadBanner";
+import AnnouncementBar from "@/components/AnnouncementBar";
+import Header from "@/components/Header";
+import ShopByConcern from "@/components/ShopByConcern";
+import Hero from "@/components/Hero";
+import Bestsellers from "@/components/Bestsellers";
+import TrustSection from "@/components/TrustSection";
+import SocialProof from "@/components/SocialProof";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main style={{ background: "#F0F7F2", minHeight: "100vh" }}>
-      <Navbar />
-      <HeroBanner />
-      <CategoryCards />
-      <PopularProducts />
-      <AyurvedicMedicines />
-      <PremiumSkincare />
-      <CosmeticProducts />
-      <GlobalPresence />
-      <VideoTestimonials />
-      <CustomerReviews />
-      <AppDownloadBanner />
+    <main className="min-h-screen bg-canvas">
+      <AnnouncementBar />
+      <Header />
+      <ShopByConcern />
+      <Hero />
+      <Bestsellers />
+      <TrustSection />
+      <SocialProof />
       <Footer />
     </main>
   );
