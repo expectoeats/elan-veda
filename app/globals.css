@@ -36,7 +36,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Poppins", system-ui, -apple-system, sans-serif;
-  background: var(--canvas);
+  background: #ffffff;
   color: var(--text-body);
   overflow-x: hidden;
   line-height: 1.6;

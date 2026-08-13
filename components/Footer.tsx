@@ -137,14 +137,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
-                   style={{ background: "#1A6D3A" }}>
-                <svg viewBox="0 0 40 40" className="w-6 h-6">
-                  <text x="7" y="28" fill="#DAA520" fontSize="22" fontWeight="900" fontFamily="serif">
-                    ॐ
-                  </text>
-                </svg>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-11 h-11 rounded-full overflow-hidden border border-[#EEF3EE] bg-white shadow-sm shrink-0">
+                <img src="/logo.jpg" alt="Elan Veda logo" className="w-full h-full object-cover" />
               </div>
               <div className="leading-tight">
                 <div className="font-semibold text-base tracking-wide" style={{ color: "#1A6D3A" }}>

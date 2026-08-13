@@ -7,7 +7,7 @@ import PopularProducts from "@/components/PopularProducts";
 import AyurvedicMedicines from "@/components/AyurvedicMedicines";
 import PremiumSkincare from "@/components/PremiumSkincare";
 import CosmeticProducts from "@/components/CosmeticProducts";
-import GlobalPresence from "@/components/GlobalPresence";
+import AyurvedicExperts from "@/components/AyurvedicExperts";
 import VideoTestimonials from "@/components/VideoTestimonials";
 import CustomerReviews from "@/components/CustomerReviews";
 import AppDownloadBanner from "@/components/AppDownloadBanner";
@@ -23,7 +23,7 @@ export default function Home() {
       <AyurvedicMedicines />
       <PremiumSkincare />
       <CosmeticProducts />
-      <GlobalPresence />
+      <AyurvedicExperts />
       <VideoTestimonials />
       <CustomerReviews />
       <AppDownloadBanner />

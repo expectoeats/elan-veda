@@ -1,3 +1,5 @@
+import { ShoppingCart } from "lucide-react";
+
 interface ProductCardProps {
   image: string;
   title: string;
@@ -71,9 +73,9 @@ export default function ProductCard({
         </div>
 
         <button
-          className="mt-2 w-full py-1.5 rounded-md text-white text-xs font-medium hover:opacity-90 transition-opacity"
-          style={{ background: "#1A6D3A" }}
+          className="mt-2 w-full flex items-center justify-center gap-2 rounded-lg border border-[#1A6D3A]/80 bg-[#185f24] px-3 py-2.5 text-s text-white transition-all duration-200 hover:bg-[#1A6D3A] hover:text-white hover:shadow-md active:scale-[0.99]"
         >
+          <ShoppingCart className="h-3.5 w-3.5" />
           Add to Cart
         </button>
       </div>

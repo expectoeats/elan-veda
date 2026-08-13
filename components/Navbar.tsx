@@ -18,15 +18,8 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 shrink-0 group">
-            <div
-              className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
-              style={{ background: "#1A6D3A" }}
-            >
-              <svg viewBox="0 0 40 40" className="w-5 h-5">
-                <text x="6" y="27" fill="#DAA520" fontSize="20" fontWeight="bold" fontFamily="serif">
-                  ॐ
-                </text>
-              </svg>
+            <div className="w-11 h-11 rounded-full flex items-center justify-center shrink-0 overflow-hidden border border-[#E8F3EA] bg-white shadow-sm">
+              <img src="/logo.jpg" alt="Elan Veda logo" className="w-full h-full object-cover" />
             </div>
             <div className="leading-none">
               <div
