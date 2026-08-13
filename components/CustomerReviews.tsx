@@ -2,12 +2,12 @@ import { Star, Quote, CheckCircle } from "lucide-react";
 
 const reviews = [
   {
-    name: "Priya Srivastava",
+    name: "Kajol Srivastava",
     city: "Lucknow, UP",
     product: "Aloe Vera Gel",
     rating: 5,
     text: "Mujhe Aarogya India ka Aloe Vera Gel bahut pasand aaya. 2 mahine use karne ke baad meri skin glow karne lagi aur dryness bilkul khatam ho gayi. 100% natural feel aata hai — sach mein results visible hain!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg",
+    avatar: "https://www.shankara.in/cdn/shop/files/Jyoti_Mukhrji_Actor_140x.jpg?v=1674562939",
     productImg: "https://www.shankara.in/cdn/shop/files/Facial_Moisturizers.avif?v=1765864692&width=600",
     verified: true,
   },
@@ -17,7 +17,7 @@ const reviews = [
     product: "Shilajit 24K Gold",
     rating: 5,
     text: "Himalaya ka original shilajit — stamina aur energy level mein bahut farak dikha. Pehle bahut tired rehte the, ab subah fresh hote hain aur poore din active rehte hain. Best purchase of 2024!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg",
+    avatar: "https://www.shankara.in/cdn/shop/files/Kavita_Vinod_Khanna_140x.jpg?v=1673354079",
     productImg: "https://www.shankara.in/cdn/shop/files/Face_Oil_Specialty.avif?v=1765864843&width=600",
     verified: true,
   },
@@ -27,7 +27,7 @@ const reviews = [
     product: "Jamun Karela Juice",
     rating: 5,
     text: "Mere husband ke sugar level ko natural tarike se control karne ke liye ye juice bahut kaam aaya. 1 mahine mein hi fasting sugar normal range mein aa gaya. Taste bhi surprisingly accha hai!",
-    avatar: "https://lm25aarogyaindia.com/assets/websiteimages/Artboard%204%20(1).jpg",
+    avatar: "https://www.shankara.in/cdn/shop/files/Kajol_Bhatia_140x.jpg?v=1673354123",
     productImg: "https://www.shankara.in/cdn/shop/files/Cleanser_Collection_Image.avif?v=1765864934&width=600",
     verified: true,
   },
