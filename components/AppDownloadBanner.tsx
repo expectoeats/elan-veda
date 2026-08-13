@@ -31,22 +31,22 @@ export default function AppDownloadBanner() {
                 </div>
                 <div className="flex-1 p-2 grid grid-cols-2 gap-2 overflow-hidden">
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard-1256.jpg"
+                    src="https://www.pravek.com/cdn/shop/articles/Website_blog_-_Pravekliv.jpg?v=1786106076&width=720"
                     alt=""
                     className="w-full h-full object-cover rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Amla%20juice%2001.jpg"
+                    src="https://www.pravek.com/cdn/shop/articles/ayurvedic_cough_syrup_for_dry_cough.jpg?v=1784895338&width=720"
                     alt=""
                     className="w-full h-full object-cover rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard%202.jpg"
+                    src="https://www.pravek.com/cdn/shop/articles/best_ayurvedic_chyawanprash_online_870b92ac-c57d-4001-b5e6-b072b05b0533.jpg?v=1784528320&width=720"
                     alt=""
                     className="w-full h-full object-cover rounded"
                   />
                   <img
-                    src="https://lm25aarogyaindia.com/assets/websiteimages/Artboard%203.jpg"
+                    src="https://www.pravek.com/cdn/shop/articles/best_ayurvedic_chyawanprash_online_870b92ac-c57d-4001-b5e6-b072b05b0533.jpg?v=1784528320&width=720"
                     alt=""
                     className="w-full h-full object-cover rounded"
                   />
@@ -66,7 +66,7 @@ export default function AppDownloadBanner() {
               style={{ background: "#FFF8E1" }}
             >
               <img
-                src="https://lm25aarogyaindia.com/assets/websiteimages/Dr.%20Aarogya%20Rollon%20Oil%20Pure%2001.jpg"
+                src="https://maharishiayurvedaindia.com/cdn/shop/files/Dr._Priyanka_Jagota_8c915b88-672e-40bb-ae34-fafa32be3d3a.jpg?v=1781169246&width=300"
                 alt="Doctor recommended"
                 className="w-full h-full object-cover"
                 onError={(e) => {
